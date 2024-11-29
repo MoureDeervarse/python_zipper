@@ -2,9 +2,9 @@ from abc import *
 
 class Zipper(metaclass=ABCMeta):
     @abstractmethod
-    def compress(target_path, output_file):
+    def compress(self, target_path, output_file):
         pass
 
     @abstractmethod
-    def decompress(target_file, output_file):
+    def decompress(self, target_file, output_file):
         pass
